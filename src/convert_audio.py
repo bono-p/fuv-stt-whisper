@@ -274,7 +274,8 @@ def main():
     info(f"Sortie    : {output_dir}")
     info(f"Fichiers  : {len(src_files)} fichier(s) '{ext}'")
     info(f"Format    : {args.sample_rate} Hz · Mono · WAV 16-bit")
-    info(f"Renommage : {'oui (0001.wav, ...)' if args.rename else 'non (nom d\\'origine)'}")
+    label_renommage = "oui (0001.wav, ...)" if args.rename else "non (nom d'origine)"
+    info(f"Renommage : {label_renommage}")
     print()
 
     # ── Conversion ────────────────────────────────────────────────
